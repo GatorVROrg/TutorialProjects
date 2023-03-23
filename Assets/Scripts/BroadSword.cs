@@ -7,6 +7,9 @@ public class BroadSword : MonoBehaviour
     public Material lit;
     public Material unlit;
 
+    public GameObject blade;
+    public float points;
+
     public void PickUp()
     {
         gameObject.GetComponent<Rigidbody>().isKinematic = false;
@@ -14,11 +17,20 @@ public class BroadSword : MonoBehaviour
 
     public void LightUp()
     {
-        gameObject.GetComponent<MeshRenderer>().material = lit;
+        blade.GetComponent<MeshRenderer>().material = lit;
     }
 
     public void UnLight()
     {
-        gameObject.GetComponent<MeshRenderer>().material = unlit;
+        blade.GetComponent<MeshRenderer>().material = unlit;
+    }
+
+    private void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.transform.tag == "Enemy")
+        {
+            Destroy(other.gameObject);
+            points = points + 10;
+        }
     }
 }

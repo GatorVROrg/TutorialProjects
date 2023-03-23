@@ -242,6 +242,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lit: {fileID: 2100000, guid: 2029253bb95d63d418a891b09d7f9731, type: 2}
   unlit: {fileID: 2100000, guid: ecd493b2f79a00446ad1b99f0699d4ff, type: 2}
+  blade: {fileID: 0}
+  points: 0
 --- !u!1 &1487206258641551682
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +338,7 @@ GameObject:
   - component: {fileID: 7319372810302337885}
   - component: {fileID: 7254256286316695739}
   - component: {fileID: 4711885041149908828}
+  - component: {fileID: 1248086018468181110}
   m_Layer: 0
   m_Name: Body1
   m_TagString: Untagged
@@ -408,6 +411,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1248086018468181110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6498279177195419816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a70a4a4ea0e3e64ebf528212c16030d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lit: {fileID: 0}
+  unlit: {fileID: 0}
+  blade: {fileID: 6498279177195419816}
+  points: 0
 --- !u!1 &7915895334914289320
 GameObject:
   m_ObjectHideFlags: 0
