@@ -76,6 +76,60 @@ MonoBehaviour:
   head: {fileID: 738769159392883444}
   leftHand: {fileID: 8517669535508127281}
   rightHand: {fileID: 3003054458725406183}
+  RightpinchAnimationAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Rightpinch Animation
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 077fc472-d160-4aec-8ec5-a62647f59646
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  LeftgripAnimationAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Leftgrip Animation
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: ef06ee5e-c5c4-449b-b94a-09ed70988b11
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  LeftpinchAnimationAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Leftpinch Animation
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: ca5001f0-ff09-419d-b1fb-eb3c13d7344e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  RightgripAnimationAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Rightgrip Animation
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: a8ae745d-9da1-4495-8fca-d750f092c608
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  RighthandAnimator: {fileID: 4947780578654598387}
+  LefthandAnimator: {fileID: 8412152537453265463}
 --- !u!1 &4111112398475897908
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,7 +304,7 @@ Transform:
   m_GameObject: {fileID: 7823452408668668329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 738769159392883444}
@@ -375,6 +429,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
+--- !u!95 &4947780578654598387 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5686134208192617028, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+    type: 3}
+  m_PrefabInstance: {fileID: 739497261260353207}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4947780578664405797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5686134208185136530, guid: 1fd3a7c43c8190f4d8c167ebde694364,
@@ -450,6 +510,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
+--- !u!95 &8412152537453265463 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 109434732388006827, guid: 65847589f926b734d9eaed6e25f0046b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8446837993559177628}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8412152537462566369 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 109434732395451517, guid: 65847589f926b734d9eaed6e25f0046b,

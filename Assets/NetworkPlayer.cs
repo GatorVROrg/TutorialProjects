@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.XR.CoreUtils;
 using Photon.Pun;
+using UnityEngine.InputSystem;
+
 
 public class NetworkPlayer : MonoBehaviour
 {
@@ -15,6 +17,14 @@ public class NetworkPlayer : MonoBehaviour
     private Transform rightHandRig;
 
     private PhotonView photonView;
+
+    public InputActionProperty RightpinchAnimationAction;
+    public InputActionProperty LeftgripAnimationAction;
+    public InputActionProperty LeftpinchAnimationAction;
+    public InputActionProperty RightgripAnimationAction;
+
+    public Animator RighthandAnimator;
+    public Animator LefthandAnimator;
 
     void Start()
     {
@@ -39,6 +49,18 @@ public class NetworkPlayer : MonoBehaviour
             MapPosition(head, headRig);
             MapPosition(leftHand, leftHandRig);
             MapPosition(rightHand, rightHandRig);
+
+            float RtriggerValue = RightpinchAnimationAction.action.ReadValue<float>();
+            RighthandAnimator.SetFloat("Trigger", RtriggerValue);
+
+            float RgripValue = RightgripAnimationAction.action.ReadValue<float>();
+            RighthandAnimator.SetFloat("Grip", RgripValue);
+
+            float LtriggerValue = LeftpinchAnimationAction.action.ReadValue<float>();
+            LefthandAnimator.SetFloat("Trigger", LtriggerValue);
+
+            float LgripValue = LeftgripAnimationAction.action.ReadValue<float>();
+            LefthandAnimator.SetFloat("Grip", LgripValue);
         }
     }
 
